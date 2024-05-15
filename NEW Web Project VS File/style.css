@@ -1,0 +1,203 @@
+
+*,
+*:before,
+*:after
+
+
+body{
+  height: 100vh;
+  background:#0097b2
+  }
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #292929;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: 'text-decoration-line';
+  font-size: 25px;
+  font-family: sans-serif;
+
+}
+
+/*color to the top navigation */
+.topnav {
+  background-color: #6cbe4c;
+  overflow: hidden;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #6cbe4c ;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home")*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* Realigns nav vertically on small screens */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+/*Styling hero*/
+
+.text {
+  color:#1d4386;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  background: url(Images\home.jpg) no-repeat center;
+}
+
+
+.hero-content {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  bottom: 380px;
+  left: 30%;
+  background-color: #0d0e0db7;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+padding: 4%;
+}
+
+
+.blur {
+
+    filter: blur(2px);
+
+}
+
+.heading {
+
+text-align: center;
+
+}
+
+.with-blur-backdrop {
+
+  background-color: rgba(255, 255, 255, 0.4);
+
+  -webkit-backdrop-filter: blur(2px);
+
+  backdrop-filter: blur(2px);
+
+  padding: 20px 30px;
+
+}
+
+
+/*Styling boxes on contact page*/
+
+.contact-boxes {
+
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    padding: 25px;
+    margin: 5px;
+    font-family: sans-serif;
+  font-size: 20px;
+  background-color: #434443b7;
+  color:#1d4386;
+  text-align: center 
+  }
+
+
+
+/*Adjust margins on contact page*/
+
+h4{
+  margin-bottom: 0;
+}
+.contactInfo{
+  margin-top: 0;
+}
+
+/*Styling text boxes on about page*/
+
+.sectionTitles {
+  margin-bottom: 5px;
+}
+
+
+.sectionText {
+
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+    padding: 90px;
+    margin: 25px;
+    font-family: sans-serif;
+  font-size: 20px;
+  background-color: #434443b7;
+  color:#1d4386;
+  float: right
+  }
+ 
+
+/*Styling staff containers*/
+
+
+.staffBios {
+width: fit-content;
+height: fit-content;
+min-height: 250px;
+border: 1px solid black;
+padding: 50px;
+margin: 10px;
+font-family: sans-serif;
+font-size: 20px;
+background-color: #434443b7;
+color:#1d4386;
+text-align: left
+}
+
+
+/* Styling staff pics*/
+
+.imgClass1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 40%;
+  margin: 5px;
+  padding:5px;
+  float: inline-start;
+}
